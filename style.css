@@ -3,6 +3,7 @@
     --primary-color: #3B4050;
     --primary-color-dark: #2E323F;
     --secondary-color: #e2e2e2;
+    --secondary-color-text: rgb(219, 219, 219);
     --secondary-color-dark: #6F737F;
     --tertiary-color: #A59678;
     --white: #fff;
@@ -73,6 +74,10 @@ a{
     font-size: 1.5rem;
 }
 
+.nav__item a:hover{
+    opacity: 0.75;
+}
+
 .container__logo{
     margin: 0 auto;
     text-align: center;
@@ -135,17 +140,18 @@ p{
 
 .content__advantages{
     background: var(--secondary-color);
+    text-align: center;
+}
+
+.content__advantages .container{
+    padding: 1.5em 1.5em 1.5em 1.5em;
 }
 
 .content__advantages p{
     font-family: var(--paragraphs);
+    color: rgb(56, 56, 56);
     text-align: justify;
     margin: 1em 0em;
-}
-
-.content__advantages{
-    padding: 1.8em;
-    text-align: center;
 }
 
 .main__content{
@@ -186,7 +192,7 @@ footer h2{
 }
 
 footer p{
-    color: rgb(219, 219, 219);
+    color: var(--secondary-color-text);
     font-family: var(--paragraphs);
 }
 
@@ -209,4 +215,67 @@ footer p{
 .first__flex__element{
     display: flex;
     justify-content: space-between;
+}
+
+@media (min-width: 700px){
+    .hero{
+        padding: 3em;
+    }
+
+    .hero__title{
+        padding: 0;
+    }
+
+    .hero__flex{
+        display: flex;
+        justify-content: space-between;
+        max-width: 925px;
+        margin: 0 auto;
+    }
+
+    .hero__btn{
+        margin-top: 0;
+    }
+
+    .content__flex .row{
+        display: flex;
+    }
+
+    .content__advantages .col{
+        margin: 0em 1em;
+    }
+
+    .sidebar{
+        display: flex;
+    }
+
+    .second__block__space{
+        margin: 0em 1em 1em 1em;
+    }
+
+    .footer__title{
+        padding-bottom: 0.5em;
+    }
+
+    .first__flex__element{
+        justify-content: space-evenly;
+    }
+
+    .wrapper__flex__element{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .first__flex__element .center__p__left{
+        padding-left: 3em;
+    }
+
+    .first__flex__element .center__p__right{
+        padding-right: 3em;
+    }
+}
+
+
+@media (min-width: 1000px){
+
 }
