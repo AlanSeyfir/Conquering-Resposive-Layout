@@ -26,7 +26,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
 
 img{
@@ -278,4 +277,117 @@ footer p{
 
 @media (min-width: 1000px){
 
+    .hero__title{
+        font-size: 3.5rem;
+        text-align: initial;
+        width: 80%;
+    }
+
+    .hero__title{
+        margin-right: 0.7em;
+    }
+
+    .hero__sub--content{
+        font-size: 1.5rem;
+    }
+
+    .hero__flex {
+        align-items: flex-end;
+        max-width: initial;
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }
+
+    .hero__sub--content{
+        text-align: initial;
+    }
+
+    .hero__sub--content p {
+        padding-left: 0.3em;
+    }
+
+    .hero__btn{
+        margin-left: 0;
+        border-radius: 50px;
+    }
+
+    .hero__btn a{
+        font-size: 1.6rem;
+    }
+
+    .content__advantages .container{
+        padding: 5.5em 1.5em 5.5em 1.5em;
+    }
+
+    .content__advantages p{
+        text-align: center;
+    }
+
+    .content__advantages .row{
+        font-size: 1.2rem;
+    }
+
+    .advantages__center__space{
+        margin: 0em 7em;
+        padding: 0em 7em;
+    }
+
+    main{
+        display: flex;
+        padding-top: 5em;
+        padding-bottom: 7em;
+    }
+
+    .main__content{
+        width: 70%;
+    }
+
+    .main__content h2{
+        font-size: 2rem;
+    }
+
+    .main__content p{
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+
+    .sidebar{
+        width: 30%;
+        display: block;
+        margin-top: 1.5em;
+        margin-left: 1.5em;
+    }
+
+    .second__block__space{
+        margin: 0em 0em 1em 0em;
+    }
+
+    .footer__info{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__title{
+        font-size: 4rem;
+        padding-top: 0.6em;
+    }
+
+    .about__company{
+        width: 35%;
+    }
+
+    /*Reset the elements*/
+    .first__flex__element,
+    .wrapper__flex__element{
+        display: block;
+    }
+
+    .first__flex__element .center__p__left{
+        padding-left: 0;
+    }
+
+    .first__flex__element .center__p__right{
+        padding-right: 0;
+    }
+    
 }
