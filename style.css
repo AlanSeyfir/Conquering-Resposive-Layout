@@ -69,6 +69,7 @@ a{
 }
 
 .nav__item a{
+    
     color: var(--white);
     font-size: 1.5rem;
 }
@@ -77,8 +78,13 @@ a{
     opacity: 0.75;
 }
 
+.nav__btn--primary{
+    background: var(--tertiary-color);
+    padding: 0.2em 1.2em;
+    border-radius: 30px;
+}
+
 .container__logo{
-    margin: 0 auto;
     text-align: center;
 }
 
@@ -216,7 +222,41 @@ footer p{
     justify-content: space-between;
 }
 
+@media(max-width: 700px){
+    .nav__list{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav__list--primary li{
+        margin-bottom: 2em;
+    }
+
+    .nav__list--secondary li{
+        margin-left: 2em;
+    }
+}
+
 @media (min-width: 700px){
+
+    /*TODO: Add the correct nav position*/
+    .nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav__list{
+        display: flex;
+    }
+
+    .nav__list--primary li{
+        margin-right: 2em;
+    }
+
+    .nav__list--secondary li{
+        margin-left: 2em;
+    }
+
     .hero{
         padding: 3em;
     }
@@ -276,6 +316,32 @@ footer p{
 
 
 @media (min-width: 1000px){
+
+    header .container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav{
+        display: flex;
+        align-items: center;
+    }
+
+    .nav__list{
+        display: flex;
+    }
+
+    .nav__list--primary li{
+        margin-right: 2em;
+    }
+
+    .nav__list--secondary li{
+        margin-left: 2em;
+    }
+
+    .nav__logo img{
+        margin-bottom: 0;
+    }
 
     .hero__title{
         font-size: 3.5rem;
